@@ -1,30 +1,27 @@
-media screen and (max-width:768px) {
-    .temple-gallery {
-        grid-template-columns: 1fr;
-     }   
-      
+@media only screen and (min-width:768px) {
+    header {
+        max-width: 1170px;
+        margin: 0 auto;
     }
-    @media (min-width:37.5em){
-        h1{
-            font-size: 2.5rem;
-            margin-left: 10px;
-            margin-right: 20px;
-        }
-        h2{
-            font-size: 2rem;
-            text-align: center;
-        }
-        #menu{
-            display: none;
-        }
-        .navigation{
-            flex-direction:row;
-        }
-        .navigation a{
-            display:inline-flex;
-            align-items: end;
-        }
-        .temple-gallery{
-            grid-template-columns: repeat(3,1fr);
-        }
+    nav, main{       
+        max-width: 1170px;   
     }
+    
+    .navigation {
+        display: flex;
+    }
+    .navigation a {
+        color: var(--white-color);
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    #menu {
+        display: none;
+    }
+    .galery {        
+        grid-template-columns: 1fr 1fr 1fr;        
+    }
+    
+}
